@@ -1,4 +1,4 @@
-# NTU URECA Parliament Topic Modeling
+# NTU URECA Parliament Topic Modelling
 
 <a href="https://ureca-parliament-topic-modeling.streamlit.app/">
   <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit">
@@ -6,16 +6,16 @@
 
 
 ## Overview
-This project applies Natural Language Processing (NLP) techniques to analyze Singapore's parliamentary debates between 1965 and 1976. Using BERTopic, we uncover topics and trends in the legislative priorities of early Singapore, contributing to a deeper understanding of the political and policy landscape during this period.
+This project applies Natural Language Processing (NLP) techniques to analyse Singapore's parliamentary debates between 1965 and 1976. Using BERTopic, we uncover topics and trends in the legislative priorities of early Singapore, contributing to a deeper understanding of the political and policy landscape during this period.
 
 ![Intertopic Distance Map](https://github.com/daniel-023/URECA-Parliament-Topic-Modeling/blob/main/visualisations/Intertopic_Distance_Map.gif)
 
 
 ## Key Features
-* **Topic Modeling:** Using BERTopic to extract topics from historical parliamentary data.
-* **Data Visualization:** Interactive charts such as intertopic distance maps, word clouds, and document clusters.
+* **Topic Modelling:** Using BERTopic to extract topics from historical parliamentary data.
+* **Data Visualisation:** Interactive charts such as intertopic distance maps, word clouds, and document clusters.
 * **Exploratory Data Analysis (EDA):** Comprehensive analysis of the parliamentary reports from three early parliaments of Singapore.
-* **Interactive App:** Access the Streamlit app to visualize and explore the data interactively.
+* **Interactive App:** Access the Streamlit app to visualise and explore the data interactively.
 
 
 ## Data Preview
@@ -41,7 +41,7 @@ This project applies Natural Language Processing (NLP) techniques to analyze Sin
    ```sh
    python -m venv myenv
    ```
-   Activate it (for PowerShell)
+   Activate the venv (for PowerShell)
    ```sh
    myenv/Scripts/activate.ps1
    ```
@@ -63,30 +63,23 @@ URECA-Parliament-Topic-Modeling/
 │
 ├── Datasets/               # Original parliamentary reports from 1965-1976
 ├── Models/                 # BERTopic model and embeddings
-├── Output/                 # Visualizations, charts, and generated outputs
+├── Output/                 # Visualisations, charts, and generated outputs
 ├── EDA.py                  # Exploratory Data Analysis
 ├── data_preprocessing.py   # Data loading, cleaning, and preprocessing scripts
-├── topic_modeling.py       # BERTopic modeling and visualization
+├── topic_modeling.py       # BERTopic modelling and visualisation
 ├── utils.py                # Helper functions
 ├── main.py                 # Main script for running the pipeline
-└── app.py                  # Streamlit application for topic modeling and prediction
+└── app.py                  # Streamlit application for topic modelling and prediction
 ```
 
 
-## Installation Notes
-For Windows users, you will need to install the **[Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)** before installing BERTopic. Ensure the following components are selected:
-
-* **Windows 10/11 SDK**
-* **MSVCv143 - VS 2022 C++ x64/x86 build tools (Latest)**
-
-  
 ## Visualisations
 ![](https://github.com/daniel-023/URECA-Parliament-Topic-Modeling/blob/main/Output/singapore_flag_wordcloud.png)
-The `Output/` folder contains several visualizations generated from the parliamentary data:
+The `Output/` folder contains several visualisations generated from the parliamentary data:
 
 * **Intertopic Distance Map:** Explore the clustering of topics.
 * **Document Clusters:** Visual representation of documents grouped by topic. 
-* **Word Clouds:** Visualize the most frequently occurring words in parliament debates.  
+* **Word Clouds:** Visualise the most frequently occurring words in parliament debates.  
 * **Top 10 Speakers:** Bar charts depicting the most frequent speakers by parliament. 
 * **Document Length Distribution:** Histogram of document lengths.
 
